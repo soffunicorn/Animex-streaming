@@ -1,0 +1,109 @@
+#login{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom:0em; 
+}
+.opaco{
+  background-color: rgba(36, 41, 46, 0.8);padding-bottom:  1em;
+}
+.padding-b{ padding-bottom: 15vmin; }
+.headerlog{
+border-bottom-style: solid; 
+border-bottom-width: 1px; 
+border-bottom-color:#fff;     
+}
+
+.headerlog .portal{ color:#fff; }
+.loginbg{
+  background-color: #fff;
+  margin-bottom: 2em;
+  width: 80%;
+}
+.border-bo{
+  border-bottom-width: 1px;
+ border-bottom-style: solid; 
+ border-bottom-color: #cccc;
+ margin-bottom: 1em;
+ background-color: #FAFAFA;
+}
+#login .border{ 
+  margin-top:1em;
+  margin-bottom: 2em;
+  border:solid 1px #cccccc;
+  padding:2em; 
+}
+.btn-ingresar{
+  color:#fff;
+  background-color: #3949AB;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size:1em;
+  text-transform: uppercase;
+}
+.una{color:#FF0000;}
+.crear-cuento{text-align: center;}
+.info-text{line-height: 2;}
+.logo{
+  width:35px;
+  height:35px;
+  background-color: #ff382e;
+  color:#fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Shojumaru', cursive;
+  float:center;
+}
+.btn-regi{
+  background-color: #F4511E;
+  color:#fff;
+   margin:1.5em;
+   font-weight: bold;
+}
+.login-b{
+  color:#fff;
+  width:2.5em;
+  padding:1.5em;
+  line-height: 1em;
+ font-weight: bold;
+}
+.saludo{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color:#000;
+  font-family: helvetica;
+}
+.btn-regi:hover{
+  color:#fff;
+  background-color: #ff382e;
+}
+.registrar-div{ float:right; }
+.login-b:hover{
+  background-color: rgb(255, 255, 255, 0.1);
+  color:#fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.inp-wtb{
+ border-color: #ff0000;
+ border-top: 0;
+ border-left:0;
+ border-right:0;
+ box-shadow: none;
+ border-radius: 0;
+
+}
+.respon-he{display: none;}
+@media (max-width: 1110px){
+  .respon-he{display: block}
+  .no-re{display:none;}
+  .registrar-div{max-width:250px;}
+  .btn-regi{margin-left: 5px; margin-right: 5px;}
+  .login-b{padding: 10px;}
+}
+/* Para registro */
+.regis-label{
+  transform: translate3d(0,28px,0) scale(1);
+}
+

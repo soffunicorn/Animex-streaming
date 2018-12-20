@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Serie</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-fixed escritorio" id="nav-regis">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">WebSiteName</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#" class="icon-link"><i class="far fa-gamepad icon-nav"></i> Noticias</a></li>
+                            <li><a href="#" class="icon-link"><i class="fas fa-home icon-nav"></i> Directorio</a></li>
+                            <li><a href="#" class="icon-link"><i class="far fa-comments icon-nav"></i> Chat anime</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="input-group">
+                                <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default btn-nav" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-5">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fas fa-mobile-alt icon-nav"></i> Aplicacion</a></li>
+                            <li><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#"> Registrar</a></span></li>
+                            <li><a href="#"> Chat anime</a></li>
+                            <li><a href="#"><i class="far fa-clock icon-nav2"></i></a></li>
+                            <li><a href="#"><i class="far fa-star icon-nav2"></i></a></li>
+                            <li><a href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-default" id="navmovil">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-xs-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="width:500px">WebSiteName</a>
+                </div>
+                <div class="collapse container col-sm-12 row" id="myNavbar">
+                    <ul class="nav navbar-nav text-center col-xs-12">
+                        <li><a href="#"><i class="far fa-gamepad icon-nav" style="margin-top:40px;"></i> Noticias</a></li>
+                        <li><a href="#"><i class="fas fa-home icon-nav"></i> Directorio</a></li>
+                        <li><a href="#"><i class="far fa-comments icon-nav"></i> Chat anime</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt icon-nav"></i> Aplicacion</a></li>
+                        <li class="panel-body"><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#">Registrar</a></span></li>
+                        <li><a class="span" href="#"><i class="far fa-clock icon-nav2"></i></a>
+                            <a class="span" href="#"><i class="far fa-star icon-nav2"></i></a>
+                            <a class="span" href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left col-xs-12" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default btn-nav" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <section id="noticias">
+ 	<div class="container">
+ 		<div class="row">
+ 		<div class="col-md-8">
+ 			<div class="col-md-12 noticia-view no-padding">
+ 				<h2 class="noti-titles">Meet the Musicians</h2>
+ 				<p class="colorgrey padding-l">15 de Agosto 2018. Usuario creador de post</p>
+ 				<img src="img/img2018_09_10_21.jpg" class="img-responsive img-noti" />
+ 				<p class="descrip-noti colorgrey">Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla bibendum tempor porttitor, condimentum vel sociis dapibus per lobortis ut posuere laoreet eros imperdiet</p>
+ 				<span class="colorgrey pull-left padding-l">Leer mas <i class="fas fa-angle-double-right" style="padding-left: 10px;"></i></span>
+ 			</div>
+ 			<div class="col-md-12 noticia-view no-padding">
+ 				<h2 class="noti-titles">Meet the Musicians</h2>
+ 				<p class="colorgrey padding-l">15 de Agosto 2018. Usuario creador de post</p>
+ 				<img src="img/img2018_09_10_21.jpg" class="img-responsive img-noti" />
+ 				<p class="descrip-noti colorgrey">Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla bibendum tempor porttitor, condimentum vel sociis dapibus per lobortis ut posuere laoreet eros imperdiet</p>
+ 				<span class="colorgrey pull-left padding-l">Leer mas <i class="fas fa-angle-double-right" style="padding-left: 10px;"></i></span>
+ 			</div>
+ 			<div class="noti-publi col-md-12">
+ 				<h1 class="publi-text navbar-text">PUBLICIDAD</h1>
+ 			</div>
+ 			<div class="col-md-12 noticia-view no-padding">
+ 				<h2 class="noti-titles">Meet the Musicians</h2>
+ 				<p class="colorgrey padding-l">15 de Agosto 2018. Usuario creador de post</p>
+ 				<img src="img/img2018_09_10_21.jpg" class="img-responsive img-noti" />
+ 				<p class="descrip-noti colorgrey">Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla bibendum tempor porttitor, condimentum vel sociis dapibus per lobortis ut posuere laoreet eros imperdiet</p>
+ 				<span class="colorgrey pull-left padding-l">Leer mas <i class="fas fa-angle-double-right" style="padding-left: 10px;"></i></span>
+ 			</div>
+ 			<div class="col-md-12">
+                           <div class="col-md-8">
+                              <ul class="pagination pull-right">
+                                 <li><a href="#">1</a></li>
+                                 <li class="active"><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">4</a></li>
+                                 <li><a href="#">Siguiente Pagina</a></li>
+                              </ul>
+                           </div>
+                        </div>
+ 		</div>
+ 		<div class="col-md-4">
+ 			<div class="col-sm-offset-3 col-sm-6 like-button">
+ 				<div class="border-buton">4mil</div>
+ 					<button class="btn btn-button btn-block"><i class="fas fa-thumbs-up" style="padding-right:8px;"></i>Me gusta</button>
+ 					<button class="btn btn-share btn-block">Compartir</button>
+ 			</div>
+ 			<div class="col-md-12 pill-noti">
+ 				<ul class="nav nav-pills nav-stacked">
+                     <li class="active"><a  data-toggle="tab" href="#vistoA">Todas las entradas</a></li>
+                     <li><a data-toggle="tab" href="#PendienteA">Publicidad</a></li>
+                     <li><a data-toggle="tab" href="#SiguiendoA">Equipo</a></li>
+                     <li><a data-toggle="tab" href="#EstadisticoA">Guias</a></li>
+                      <li><a data-toggle="tab" href="#EstadisticoA">Rangos</a></li> 
+                      <li><a data-toggle="tab" href="#EstadisticoA">Cuenta</a></li>
+                       <li><a data-toggle="tab" href="#EstadisticoA">Ver anime</a></li>
+                  </ul>
+ 			</div>
+ 			<div class="col-md-12 publi-lateral">
+ 				<h3 class="publi-text-late">PUBLICIDAD</h3>
+ 			</div>
+ 			<div class="col-md-12 usdiv">
+ 				<ul>
+ 					<li><a href="#"><i class="fas fa-home fa-lg" style="padding-right:0.5em;"></i>Sobre AEx</a></li>
+ 					<li><a href="#"><i class="fas fa-mobile-alt fa-lg" style="padding-right:0.5em;"></i>Aplicacions</a></li>
+ 					<li><a href="#"><i class="fas fa-briefcase fa-lg" style="padding-right:0.5em;"></i>Nuestro equipo</a></li>
+ 				</ul>
+ 				
+ 			</div>
+
+ 		</div>
+ 	</div>
+ 	</div>   	
+    </section>
+     <footer class="footer">
+         <div class="container">
+         <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+               <hr class="hr">
+               <div class="col-md-6">
+                  <p class="unir"> Unete a nuestras redes sociales! ©  AEx 2018<br>Ningún vídeo se encuentra alojado en nuestros servidores</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav navbar-nav footer-social pull-right">
+                     <li class="active"><a href="#"><i class="fab fa-google-plus-square fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-flickr fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-tumblr-square fa-lg"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+</body>
+</html>

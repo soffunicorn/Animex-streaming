@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Anime Series y Películas">
+	<meta name="author" content="Media Master">
+
+	<title>ANIMEX | Series y Peliculas</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+<link href="css/portfolio-item.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style type="text/css">
+   .mb-3{
+   	margin-bottom:1.5em;
+   }
+    .mb-4 {
+    	margin-bottom:0.99em;
+    }
+    th {
+    	text-align: center;
+    }
+    td,th, tr {
+    	padding:5px;
+    	border-right: 0.5px solid #000;
+    
+    }
+    table{
+    	border-left:  1px solid #000;
+    }
+    table img {
+    	max-height:50px;
+    }
+</style>
+
+<body>
+<header>
+        <nav class="navbar navbar-fixed escritorio navbar-fixed-top" id="nav-regis">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">WebSiteName</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#" class="icon-link"><i class="far fa-gamepad icon-nav"></i> Noticias</a></li>
+                            <li><a href="#" class="icon-link"><i class="fas fa-home icon-nav"></i> Directorio</a></li>
+                            <li><a href="#" class="icon-link"><i class="far fa-comments icon-nav"></i> Chat anime</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <form class="navbar-form navbar-left" action="/action_page.php">
+                            <div class="input-group">
+                                <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default btn-nav" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-5">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fas fa-mobile-alt icon-nav"></i> Aplicacion</a></li>
+                            <li><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#"> Registrar</a></span></li>
+                            <li><a href="#"> Chat anime</a></li>
+                            <li><a href="#"><i class="far fa-clock icon-nav2"></i></a></li>
+                            <li><a href="#"><i class="far fa-star icon-nav2"></i></a></li>
+                            <li><a href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-default" id="navmovil">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-xs-12">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="width:500px">WebSiteName</a>
+                </div>
+                <div class="collapse container col-sm-12 row" id="myNavbar">
+                    <ul class="nav navbar-nav text-center col-xs-12">
+                        <li><a href="#"><i class="far fa-gamepad icon-nav" style="margin-top:40px;"></i> Noticias</a></li>
+                        <li><a href="#"><i class="fas fa-home icon-nav"></i> Directorio</a></li>
+                        <li><a href="#"><i class="far fa-comments icon-nav"></i> Chat anime</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt icon-nav"></i> Aplicacion</a></li>
+                        <li class="panel-body"><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#">Registrar</a></span></li>
+                        <li><a class="span" href="#"><i class="far fa-clock icon-nav2"></i></a>
+                            <a class="span" href="#"><i class="far fa-star icon-nav2"></i></a>
+                            <a class="span" href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left col-xs-12" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default btn-nav" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+	
+	<div class="container-fluid">
+
+		<!-- Banner 900 x 150 -->
+		<div class="row my-1">
+			<div class="col-md-12 banner">
+				<img src="http://placehold.it/1400x250" class="img-responsive" style="width:100%">
+			</div>
+		</div>
+		<!-- FIN Banner 900 x 150 --> 
+
+
+		<div class="container">
+
+			<!-- Ultimos Carrousel -->
+
+			<div class="row">
+
+				<div class="col-lg-6">
+					<div class="">
+						<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="row">
+
+				<!-- contenido -->
+				<div id="Content" class="col-md-9">
+
+
+
+					<!-- noticias -->
+					
+
+					<div class="row">
+                      <div class="col-sm-12">
+                      	<h5 class="my-2"><i class="fas fa-award"></i>  NOTICIAS ANIME</h5>
+                      </div>
+						
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+					</div>
+
+                    <div class="programacion">
+					<h5 class="my-2"><i class="far fa-star"></i> Progrmacion</h5> 
+
+					<table width="100%">
+						<tr>
+							<th>
+								Lunes
+							</th>
+							<th>
+								Martes
+							</th>
+							<th>
+								Miercoles
+							</th>
+							<th>
+								Jueves
+							</th>
+							<th>
+								Viernes
+							</th>
+							<th>
+								Sabado
+							</th>
+							<th>
+								Domingo
+							</th>
+						</tr>
+							<tr>
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+							
+							<td>
+								<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+
+							<td>
+								Purbea
+							</td>
+						</tr>
+
+
+
+
+
+					</table>
+				</div>
+
+				<div class="row">
+                      <div class="col-sm-12">
+                      	<h5 class="my-2"><i class="fas fa-award"></i>  NOTICIAS ANIME</h5>
+                      </div>
+						
+									<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Anime Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+
+					</div>
+
+            <div class="public row">
+            	<div class="col-sm-12">
+				<img src="http://placehold.it/1400x250" class="img-responsive" style="width:100%">
+			    </div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Series Destacadas -->
+				
+				<div class="row">
+
+                <div class="col-md-6">
+                <h5 class="my-2"><i class="far fa-star"></i> PELÍCULAS DESTACADAS</h5>
+                </div>	
+                <div class="col-md-6 text-right">
+                 Ver mas
+                </div>
+
+
+
+                <div class="col-lg-12">
+                <div class="row">	
+				<div class="col-lg-6">
+					<div class="">
+						<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+			</div>
+
+					<div class="row">
+
+                <div class="col-md-6">
+                <h5 class="my-2"><i class="far fa-star"></i> PELÍCULAS DESTACADAS</h5>
+                </div>	
+                <div class="col-md-6 text-right">
+                 Ver mas
+                </div>
+
+
+
+                <div class="col-lg-12">
+                <div class="row">	
+				<div class="col-lg-6">
+					<div class="">
+						<img class="img-responsive mb-3 mb-md-0" src="http://placehold.it/750x340" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+						<div class="col-lg-4 mb-3 mb-md-0">
+							<img class="img-responsive" src="http://placehold.it/350x250" alt="" hieght="250">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+			</div>
+
+
+					<!-- /.row -->
+
+				
+
+				<!-- FIN Series -->
+</div>
+
+				<!-- sidebar -->
+				<div id="sidebar" class="col-md-3">
+					<h5 class="my-2"><i class="fab fa-cloudscale"></i> NOTICIAS</h5>
+					<div class="row">
+						<div class="col-md-12 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Noticia Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+							<div class="col-md-12 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Noticia Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+							<div class="col-md-12 col-sm-6 mb-4">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/500x300" alt="">
+							</a>
+							<div class="card-body" style="width: 18rem;">
+								<h6 class="card-title">Noticia Title</h6>
+								<p class="card-text"><small class="text-muted">Descripción text anime</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+	<!-- /.container -->
+
+	<!-- Footer -->
+    <footer class="footer">
+         <div class="container">
+         <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+               <hr class="hr">
+               <div class="col-md-6">
+                  <p class="unir"> Unete a nuestras redes sociales! ©  AEx 2018<br>Ningún vídeo se encuentra alojado en nuestros servidores</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav navbar-nav footer-social pull-right">
+                     <li class="active"><a href="#"><i class="fab fa-google-plus-square fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-flickr fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-tumblr-square fa-lg"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>  

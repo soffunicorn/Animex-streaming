@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <title>Perfil</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-fixed nav-perfil" id="nav-regis">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="navbar-header">
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                     </div>
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="icon-link"><i class="far fa-gamepad icon-nav"></i></i>Noticias</a></li>
+                        <li><a href="#" class="icon-link"><i class="fas fa-home icon-nav"></i>Directorio</a></li>
+                        <li><a href="#" class="icon-link"><i class="far fa-comments icon-nav"></i>Chat anime</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="input-group">
+                           <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                           <div class="input-group-btn">
+                              <button class="btn btn-default btn-nav" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-5">
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fas fa-mobile-alt icon-nav"></i>Aplicacion</a></li>
+                        <li ><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#">Registrar</a></span></li>
+                        <li><a href="#">Chat anime</a></li>
+                        <li><a href="#"><i class="far fa-clock icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="far fa-star icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section id="logros-perfil">
+         <div class="container">
+            <div class=" bgi" style="background-image:url('img/1537514052883.jpg');">
+               <!--   <?php if($user->foto==''){ ?>
+                  <img src="img/1537514052883.jpg" class="rounded-circle cic"/>
+                  <?php }else{ ?>-->
+               <img src="img/default.png" class="img-circle cic"/>
+               <h4 class="user-name">Lorem ipsum</h4>
+               <p class="description-user">Founder and Ceo</p>
+               <div class="buttons"><button class="btn btn-one">Seguir</button>
+                  <button class="btn btn-two">Bloquear</button>
+                  <button class="btn-three"><i class="fas fa-ellipsis-v fa-lg"></i></button>
+               </div>
+            </div>
+            <nav id="second-nav" class="navbar navbar-expand-sm bg-light">
+               <ul class="navbar-nav navbar-text nav-secondnav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-asterisk fa-lg"></i>Anime</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Doramas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fab fa-rocketchat fa-lg" style="color:#8AD4DF;"></i>Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-heart fa-lg" style="color:#FD4C5D;"></i>Logros</a>
+                  </li>
+               </ul>
+               <span class="level">
+                  <p class="col-md-4">Seguidores<br> <strong>466k</strong></p>
+                  <p class="col-md-4">Comentarios<br> <strong>46,6k</strong></p>
+                  <p class="col-md-4">Horas Online<br> <strong>245h</strong></p>
+               </span>
+            </nav>
+            <div class="col-md-12 perfil-logros">
+               <h5 class="logros-text pull-left">Logros ganados</h5>
+               <div class="col-md-12 logritos">
+                  <div class="col-md-12 back-logros margin-t">
+                     <div class="col-md-1 navbar-text">
+                        <img src="img/if_smartphone_1054975.png" class="img-responsive img-"> 
+                     </div>
+                     <div class="col-md-6">
+                        <h4 class="logros-title">Olympian User</h4>
+                        <br>
+                        <p class="logros-descrip">Congratulations! You have been in the Olympian Community for 2 years</p>
+                     </div>
+                     <div class="col-md-4 progreso">
+                        <div class="progress" style="margin-top:3em;">
+                           <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                              aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                              <span class="pull-right"><b>85%<b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Logros 2-->
+                  <div class="col-md-12 back-logros margin-t">
+                     <div class="col-md-1 navbar-text">
+                        <img src="img/if_smartphone_1054975.png" class="img-responsive img-"> 
+                     </div>
+                     <div class="col-md-6">
+                        <h4 class="logros-title">Olympian User</h4>
+                        <br>
+                        <p class="logros-descrip">Congratulations! You have been in the Olympian Community for 2 years</p>
+                     </div>
+                     <div class="col-md-4 progreso">
+                        <div class="progress" style="margin-top:3em;">
+                           <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                              aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Fin de logros-->
+                  <!--Logros 3-->
+                  <div class="col-md-12 back-logros margin-t">
+                     <div class="col-md-1 navbar-text">
+                        <img src="img/if_flame_1055059.png" class="img-responsive img-"> 
+                     </div>
+                     <div class="col-md-6">
+                        <h4 class="logros-title">Olympian User</h4>
+                        <br>
+                        <p class="logros-descrip">Congratulations! You have been in the Olympian Community for 2 years</p>
+                     </div>
+                     <div class="col-md-4 progreso">
+                        <div class="progress" style="margin-top:3em;">
+                           <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                              aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Fin de logros-->
+               </div>
+               <div class="col-md-12">
+                  <div class="col-md-7">
+                     <ul class="pagination pull-right">
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">Siguiente Pagina</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+         <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+               <hr class="hr">
+               <div class="col-md-6">
+                  <p class="unir"> Unete a nuestras redes sociales! ©  AEx 2018<br>Ningún vídeo se encuentra alojado en nuestros servidores</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav navbar-nav footer-social pull-right">
+                     <li class="active"><a href="#"><i class="fab fa-google-plus-square fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-flickr fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-tumblr-square fa-lg"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+</body>
+</html>

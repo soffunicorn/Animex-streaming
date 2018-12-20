@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <title>Perfil</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-fixed nav-perfil" id="nav-regis">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="navbar-header">
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                     </div>
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="icon-link"><i class="far fa-gamepad icon-nav"></i>Noticias</a></li>
+                        <li><a href="#" class="icon-link"><i class="fas fa-home icon-nav"></i>Directorio</a></li>
+                        <li><a href="#" class="icon-link"><i class="far fa-comments icon-nav"></i>Chat anime</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="input-group">
+                           <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                           <div class="input-group-btn">
+                              <button class="btn btn-default btn-nav" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-5">
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fas fa-mobile-alt icon-nav"></i>Aplicacion</a></li>
+                        <li ><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#">Registrar</a></span></li>
+                        <li><a href="#">Chat anime</a></li>
+                        <li><a href="#"><i class="far fa-clock icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="far fa-star icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section id="logros-perfil">
+         <div class="container">
+            <div class=" bgi" style="background-image:url('img/1537514052883.jpg');">
+               <!--   <?php if($user->foto==''){ ?>
+                  <img src="img/1537514052883.jpg" class="rounded-circle cic"/>
+                  <?php }else{ ?>-->
+               <img src="img/default.png" class="img-circle cic"/>
+               <h4 class="user-name">Lorem ipsum</h4>
+               <p class="description-user">Founder and Ceo</p>
+               <div class="buttons"><button class="btn btn-one">Seguir</button>
+                  <button class="btn btn-two">Bloquear</button>
+                  <button class="btn-three"><i class="fas fa-ellipsis-v fa-lg"></i></button>
+               </div>
+            </div>
+            <nav id="second-nav" class="navbar navbar-expand-sm bg-light">
+               <ul class="navbar-nav navbar-text nav-secondnav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-asterisk fa-lg"></i>Anime</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Doramas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fab fa-rocketchat fa-lg" style="color:#8AD4DF;"></i>Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-heart fa-lg" style="color:#FD4C5D;"></i>Logros</a>
+                  </li>
+               </ul>
+               <span class="level">
+                  <p class="col-md-4">Seguidores<br> <strong>466k</strong></p>
+                  <p class="col-md-4">Comentarios<br> <strong>46,6k</strong></p>
+                  <p class="col-md-4">Horas Online<br> <strong>245h</strong></p>
+               </span>
+            </nav>
+            <div class="col-md-12 anime-side">
+               <div class="col-md-3">
+                  <ul class="nav nav-pills nav-stacked">
+                     <li class="active"><a  data-toggle="tab" href="#vistoA">Visto</a></li>
+                     <li><a data-toggle="tab" href="#PendienteA">Pendiente</a></li>
+                     <li><a data-toggle="tab" href="#SiguiendoA">Siguiendo</a></li>
+                     <li><a data-toggle="tab" href="#EstadisticoA">Estadistico</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-9">
+                  <div class="tab-content">
+                     <div id="vistoA" class="tab-pane fade in active">
+                        <div class="col-md-12" style="margin-bottom: 1em;">
+                           <h3 style="margin-top: 0;">Series Anime</h3>
+                           <span class="pull-right"><i class="fas fa-list fa-lg" style="padding-right: 5px;"></i> <i class="fas fa-th fa-lg"></i></span>
+                        </div>
+                        <div class="col-md-12 nav-anime">
+                           <nav class="navbar navAnime">
+                              <div class="container-fluid no-padding">
+                                 <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Shonen<span class="colorgrey">85</span></a></li>
+                                    <li><a href="#">Gore <span class="colorgrey">25</span></a></li>
+                                    <li><a href="#">Magia<span class="colorgrey">5</span></a></li>
+                                    <li><a href="#">Aventura<span class="colorgrey">4</span></a></li>
+                                    <li><a href="#">Vida<span class="colorgrey">9</span></a></li>
+                                    <li><a href="#">Suspenso<span class="colorgrey">15</span></a></li>
+                                    <li><a href="#">OVA'S<span class="colorgrey">8</span></a></li>
+                                    <li><a href="#">Peliculas<span class="colorgrey">3</span></a></li>
+                                 </ul>
+                              </div>
+                           </nav>
+                        </div>
+                        <!--Inicio de los videos-->
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                           <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                           <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                        </div>
+                        <!--Fin de los videos-->
+                        <div class="col-md-12">
+                           <div class="col-md-7">
+                              <ul class="pagination pull-right">
+                                 <li><a href="#">1</a></li>
+                                 <li class="active"><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">4</a></li>
+                                 <li><a href="#">Siguiente Pagina</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="PendienteA" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Some content in menu 1.</p>
+                     </div>
+                     <div id="SiguiendoA" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Some content in menu 2.</p>
+                     </div>
+                     <div id="EstadisticoA" class="tab-pane fade">
+                        <div class="col-md-12"><h3>Estadistica anime</h3></div>
+                        <div class="col-md-6 margin-b">
+                           <h3 class="pull-left"><span class="colorgrey">Dias:</span>113.5</h3>
+                        </div>
+                           <div class="col-md-6 margin-b"> 
+                           <h3 class="pull-right"><span class="colorgrey">Puntuacion media:</span>7.99</h3>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="progress margin-b">
+                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10"
+                             aria-valuemin="1" aria-valuemax="100" style="width:5%">
+                             </div>
+                             <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                             aria-valuemin="10" aria-valuemax="100" style="width:40%">
+                             </div>
+                             <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="65"
+                             aria-valuemin="50" aria-valuemax="100" style="width:10%">
+                             </div>
+                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85"
+                             aria-valuemin="65" aria-valuemax="100" style="width:12%">
+                             </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <ul class="ul-progress">
+                              <li><div class="circulo visto"></div>Visto 6</li>
+                              <li><div class="circulo  pendiente"></div>Pendiente 228</li>
+                              <li><div class="circulo siguiendo"></div>Siguiendo 9</li>
+                              <li><div class="circulo favorito"></div>Favoritos 18</li>
+                           </ul>
+                        </div>
+                        <div class="col-md-6">
+                           <ul class="entradas-ul">
+                              <li class="colorgrey">Entradas totales<span class="colorblack" style="color:#000; padding-left: 30px;">429</span></li>
+                              <li class="colorgrey">Entradas totales<span class="colorblack" style="color:#000; padding-left: 30px;">429</span></li>
+                              <li class="colorgrey">Entradas totales<span class="colorblack" style="color:#000; padding-left: 30px;">429</span></li>
+                           </ul>
+
+                        </div>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+<footer class="footer">
+         <div class="container">
+         <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+               <hr class="hr">
+               <div class="col-md-6">
+                  <p class="unir"> Unete a nuestras redes sociales! ©  AEx 2018<br>Ningún vídeo se encuentra alojado en nuestros servidores</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav navbar-nav footer-social pull-right">
+                     <li class="active"><a href="#"><i class="fab fa-google-plus-square fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-flickr fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-tumblr-square fa-lg"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+   </html>

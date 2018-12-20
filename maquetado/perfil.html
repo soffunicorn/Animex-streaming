@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <title>Registrar</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-fixed nav-perfil" id="nav-regis">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="navbar-header">
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                     </div>
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="icon-link"><i class="far fa-gamepad icon-nav"></i></i>Noticias</a></li>
+                        <li><a href="#" class="icon-link"><i class="fas fa-home icon-nav"></i>Directorio</a></li>
+                        <li><a href="#" class="icon-link"><i class="far fa-comments icon-nav"></i>Chat anime</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="input-group">
+                           <input type="text" id="input-nav" class="form-control" placeholder="Search" name="search">
+                           <div class="input-group-btn">
+                              <button class="btn btn-default btn-nav" type="submit">
+                              <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-5">
+                     <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fas fa-mobile-alt icon-nav"></i>Aplicacion</a></li>
+                        <li ><a href="#" class="log">Login/</a><span class="registrar-btn"><a href="#">Registrar</a></span></li>
+                        <li><a href="#">Chat anime</a></li>
+                        <li><a href="#"><i class="far fa-clock icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="far fa-star icon-nav2"></i></a></li>
+                        <li><a href="#"><i class="fas fa-download icon-nav2"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section id="inicio-perfil">
+         <div class="container">
+            <div class=" bgi" style="background-image:url('img/1537514052883.jpg');">
+               <!--   <?php if($user->foto==''){ ?>
+                  <img src="img/1537514052883.jpg" class="rounded-circle cic"/>
+                  <?php }else{ ?>-->
+               <img src="img/default.png" class="img-circle cic"/>
+               <h4 class="user-name">Lorem ipsum</h4>
+               <p class="description-user">Founder and Ceo</p>
+               <div class="buttons"><button class="btn btn-one">Seguir</button>
+                  <button class="btn btn-two">Bloquear</button>
+                  <button class="btn-three"><i class="fas fa-ellipsis-v fa-lg"></i></button>
+               </div>
+            </div>
+            <nav id="second-nav" class="navbar navbar-expand-sm bg-light">
+               <ul class="navbar-nav navbar-text nav-secondnav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-asterisk fa-lg"></i>Anime</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Doramas</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-tv fa-lg"></i>Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fab fa-rocketchat fa-lg" style="color:#8AD4DF;"></i>Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#"><i class="fas fa-heart fa-lg" style="color:#FD4C5D;"></i>Logros</a>
+                  </li>
+                  <!--
+                     <li class="nav-item">
+                        <a class="nav-link" href="<?=base_url();?>perfil/editar"><i class="fas fa-user-edit fa-lg"></i>Editar Perfil</a>
+                     </li>
+                     <li  class="nav-item">
+                        <a  class="nav-link" href="<?=base_url();?>perfil/salir"> <i class="fas fa-power-off fa-lg"></i>Cerrar sesión</a>
+                     </li>
+                     -->
+               </ul>
+               <span class="level">
+                  <p class="col-md-4">Seguidores<br> <strong>466k</strong></p>
+                  <p class="col-md-4">Comentarios<br> <strong>46,6k</strong></p>
+                  <p class="col-md-4">Horas Online<br> <strong>245h</strong></p>
+               </span>
+            </nav>
+            <!--INICIO-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 cuerpo-perfil">
+                     <div class="col-md-3">
+                        <h4>Anime <button>305</button></h4>
+                     </div>
+                     <div class="col-md-7">
+                        <ul class="nav nav-tabs">
+                           <li><a data-toggle="tab" href="#visto">Visto</a></li>
+                           <li><a data-toggle="tab" href="#pendiente">Pendiente</a></li>
+                           <li><a data-toggle="tab" href="#siguiendo">Siguiendo</a></li>
+                           <li><a data-toggle="tab" href="#favorito">Favoritos</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-md-2">
+                        <button class="but-mas pull-right">Más<i class="fas fa-angle-right"></i></button>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="tab-content">
+                           <div id="visto" class="tab-pane fade in active">
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                           </div>
+                           <div id="pendiente" class="tab-pane fade">
+                              <h3>Menu 1</h3>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                           <div id="siguiendo" class="tab-pane fade">
+                              <h3>Menu 2</h3>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                           </div>
+                           <div id="favorito" class="tab-pane fade">
+                              <h3>Menu 3</h3>
+                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Fin del tab-->
+                     <!--Comentarios-->
+                     <div class="col-md-6">
+                                 <h4><b>Comentarios</b> <button>305</button></h4>
+                              </div>
+                              <div class="col-md-6">
+                                 <button class="but-mas pull-right">Más<i class="fas fa-angle-right"></i></button>
+                              </div>
+                              <div class="col-md-8 footer-coment">
+                                 <h4 class="person-coment">Bleach seasopn2</h4>
+                                 <p>Este es el comentario que se dejo en el anime, información y se registra aquí para vista y control</p>
+                                 <div class="footer-coment col-md-12">
+                                    <p class="genero">Anime</p> <span class="like"><i class="fas fa-thumbs-up"></i>750</span><span class="replicas">X 144</span><span class="reloj"><i class="far fa-clock"></i>9-19</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                 <img src="img/img2018_09_10_21.jpg" class="img-responsive img-rounded pull-right"/>
+                              </div>
+                              <div class="col-md-8 footer-coment">
+                                 <h4 class="person-coment">Bleach seasopn2</h4>
+                                 <p>Este es el comentario que se dejo en el anime, información y se registra aquí para vista y control</p>
+                                 <div class="footer-coment col-md-12">
+                                    <p class="genero">Anime</p> <span class="like"><i class="fas fa-thumbs-up"></i>750</span><span class="replicas">X 144</span><span class="reloj"><i class="far fa-clock"></i>9-19</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                 <img src="img/img2018_09_10_21.jpg" class="img-responsive img-rounded pull-right"/>
+                              </div>
+                              <div class="col-md-8 footer-coment">
+                                 <h4 class="person-coment">Bleach seasopn2</h4>
+                                 <p>Este es el comentario que se dejo en el anime, información y se registra aquí para vista y control</p>
+                                 <div class="footer-coment col-md-12">
+                                    <p class="genero">Anime</p> <span class="like"><i class="fas fa-thumbs-up"></i>750</span><span class="replicas">X 144</span><span class="reloj"><i class="far fa-clock"></i>9-19</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                 <img src="img/img2018_09_10_21.jpg" class="img-responsive img-rounded pull-right"/>
+                              </div>
+                              <div class="col-md-8 footer-coment">
+                                 <h4 class="person-coment">Fairy Tale</h4>
+                                 <p>Este es el comentario que se dejo en el anime, información y se registra aquí para vista y control</p>
+                                 <div class="footer-coment col-md-12">
+                                    <p class="genero">Anime</p> <span class="like"><i class="fas fa-thumbs-up"></i>750</span><span class="replicas">X 144</span><span class="reloj"><i class="far fa-clock"></i>9-19</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 photo-user">
+                                 <img src="img/img2018_09_10_21.jpg" class="img-responsive img-rounded pull-right"/>
+                              </div> 
+                     <!--Fin de comentarios -->
+                     <!--Doramas-->
+                     <div class="col-md-12">
+                     <div class="col-md-3">
+                        <h4>Doramas <button>385</button></h4>
+                     </div>
+                     <div class="col-md-7">
+                        <ul class="nav nav-tabs">
+                           <li><a data-toggle="tab" href="#vistoD">Visto</a></li>
+                           <li><a data-toggle="tab" href="#pendienteD">Pendiente</a></li>
+                           <li><a data-toggle="tab" href="#siguiendoD">Siguiendo</a></li>
+                           <li><a data-toggle="tab" href="#favoritoD">Favoritos</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-md-2">
+                        <button class="but-mas pull-right">Más<i class="fas fa-angle-right"></i></button>
+                     </div>
+                  </div>
+                     <!--Doramas videos tab-->
+                     <div class="col-md-12">
+                        <div class="tab-content">
+                           <div id="vistoD" class="tab-pane fade in active">
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                              <div class="col-md-3 margin-b">
+                                 <a href="#"><img src="img/img2018_09_05_26.jpg" class="img-responsive img-rounded img-visto"><span class="duracion pull-right">07:04</span></a>
+                                 <p class="des-cap">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                 <span class="under-video">X 2.75 <span class="pull-right"><i class="far fa-clock"></i>9-21</span></span>
+                              </div>
+                           </div>
+                           <div id="pendienteD" class="tab-pane fade">
+                              <h3>Menu 1</h3>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                           <div id="siguiendoD" class="tab-pane fade">
+                              <h3>Menu 2</h3>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                           </div>
+                           <div id="favoritoD" class="tab-pane fade">
+                              <h3>Menu 3</h3>
+                              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-12"><hr></div>
+                     <!--FinDoramas videos tab-->
+                     <!-- Fin de los doramas-->
+                     <div class="col-md-12">
+                       <div class="col-md-6">
+                                 <h4><b>Recomendaciones</b></h4> 
+                        </div>
+                        <div class="col-md-6">
+                                 <button class="but-mas pull-right">Más<i class="fas fa-angle-right"></i></button>
+                        </div> 
+                     </div>
+                     <div class="col-md-12">
+                        <div class="col-md-6 dis">
+                           <img src="img/portada.jpg" class="img-responsive img-recomendaciones">
+                           <h4 class="recomend-title">Titulo de la recomendacion</h4>
+                           <p class="text-title"></p>
+                        </div>
+                         <div class="col-md-6 dis">
+                           <img src="img/img2018_09_20_05.jpg" class="img-responsive img-recomendaciones">
+                           <h4 class="recomend-title">Titulo de la recomendacion</h4>
+                           <p class="text-title"></p>
+                        </div>
+                        <div class="col-md-6 dis">
+                           <img src="img/portada.jpg" class="img-responsive img-recomendaciones">
+                           <h4 class="recomend-title">Titulo de la recomendacion</h4>
+                           <p class="text-title"></p>
+                        </div>
+                         <div class="col-md-6 dis">
+                           <img src="img/img2018_09_20_05.jpg" class="img-responsive img-recomendaciones">
+                           <h4 class="recomend-title">Titulo de la recomendacion</h4>
+                           <p class="text-title"></p>
+                        </div>
+                     </div>                    
+                  </div>
+                  <div class="col-md-4">
+                     <div class="descripcion-span">
+                        <span class="rayo"><i class="fas fa-bolt fa-lg"></i></span>
+                        <h5 class="text-descrip">Founder and CEO en Facebook</h5>
+                     </div>
+                     <div class="prespan">
+                        <span class="presentacion-header">
+                           <h5>Presentacion</h5>
+                           <hr style="margin-top:10px;">
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tempor metus, faucibus porta fames commodo purus vitae orci habitant, </p>
+                     </div>
+                     <div class="prespan">
+                        <span class="presentacion-header">
+                           <h5>Experiencia por nivel</h5>
+                           <hr style="margin-top:10px;">
+                        </span>
+                        <div class="progress pgb">
+                           <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                              aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                              <span class="pull-right"><b>85%</b></span>
+                           </div>
+                        </div>
+                        <p class="next-level">Proximo nivel 7</p>
+                     </div>
+                     <div class="prespan">
+                        <span class="presentacion-header">
+                           <h5>Rango: VIP <span class="last-registro pull-right"><i class="far fa-clock"></i>Registro:28/09/2018</span></h5>
+                           <hr style="margin-top:10px;">
+                        </span>
+                        <p class="birthday"><i class="fas fa-birthday-cake fa-lg"></i>Cumpleaños: 07-13 </p>
+                     </div>
+                     <div class="prespan" style="min-height:200px;">
+                        <span class="presentacion-header">
+                           <h5>Logros</h5>
+                           <hr style="margin-top:10px;">
+                        </span>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_compose_1055085.png" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_gear_1055051.png" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <img src="img/if_image_1055042.png">
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_gear_1055051.png" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><a href="#"><img src="img/if_gear_1055051.png" class="img-responsive"></a></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_gear_1055051.png" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_image_1055042.png" class="img-responsive"></a>
+                        </div>
+                        <div class="col-md-3 margin-b">
+                           <a href="#"><img src="img/if_gear_1055051.png" class="img-responsive"></a>
+                        </div>
+                     </div>
+                     <div class="prespan" style="min-height: 310px;">
+                        <span class="presentacion-header">
+                           <h5>Amigos</h5>
+                           <hr style="margin-top:10px;">
+                        </span>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_4_avatar_2754580.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Pedrito</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_9_avatar_2754584.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Pedrito</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_10_avatar_2754575.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Pnagolibe</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_10_avatar_2754575.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Pnagolibe</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_12_avatar_2754577.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Miracle</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_12_avatar_2754577.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Miracle</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_9_avatar_2754584.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Yuriko</p>
+                        </div>
+                        <div class="col-md-6 margin-b">
+                           <a href="#"><img src="img/if_9_avatar_2754584.png" class="img-responsive img-inline"></a>
+                           <p class="friend-name">Yuriko</p>
+                        </div>
+                     </div>
+                     <div class="prespan" style="min-height: 210px;">
+                        <span class="presentacion-header">
+                           <h5 style="margin-bottom: 1em;">Otras redes sociales</h5>
+                        </span>
+                        <button class="btn btn-block btn-facebook"><i class="fab fa-facebook-f fa-lg" style="padding-right:10px; "></i>Facebook</button>
+                        <button class="btn btn-block btn-twitter"><i class="fab fa-twitter fa-lg" style="padding-right:10px; "></i>Twitter</button>
+                        <button class="btn btn-block btn-dribble">Dribble</button>
+                     </div>
+                     <div class="publi" style="display: block;">
+                        <h2 class="navbar-text">PUBLICIDAD</h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--CUERPO-->
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+         <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-md-offset-1">
+               <hr class="hr">
+               <div class="col-md-6">
+                  <p class="unir"> Unete a nuestras redes sociales! ©  AEx 2018<br>Ningún vídeo se encuentra alojado en nuestros servidores</p>
+               </div>
+               <div class="col-md-6">
+                  <ul class="nav navbar-nav footer-social pull-right">
+                     <li class="active"><a href="#"><i class="fab fa-google-plus-square fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-flickr fa-lg"></i></a></li>
+                     <li><a href="#"><i class="fab fa-tumblr-square fa-lg"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+</body>
+</html>

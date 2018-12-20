@@ -1,0 +1,111 @@
+/*Para el capitulo*/
+ #capitulo-detalle{
+        padding-top: 2.5em;;
+        background-color: #000;
+        padding-bottom:2.5em;
+ }
+ .capitulo{
+    padding-bottom: 2em;
+    background-color: #1A1A22;
+    padding-bottom: 0;
+ }
+ .f-video{
+    background-color: #101010;
+    padding-bottom: 2em;
+    padding-top: 2em;
+ }
+.f-video .ytp-cued-thumbnail-overlay-image{ margin-right: auto!important; margin-left: auto !important; }
+ .cabecera-cap{
+    color:#FD4C5D;    
+    padding-left: 8px;
+ }
+ .subtitulo-cap{
+    width: 100%;
+    background-color:#666666;
+    color: #000; 
+    padding:5px;
+ }
+ .bold{font-weight: bold; margin-bottom:0; text-transform: uppercase; }
+ .cabecera-cap .capi-dur{ margin-bottom: 8px !important;  }
+ .no-padding{
+    padding:0;
+    margin-bottom: 0;
+ }
+ .scroll-bar{
+    width: 99.5%;
+    overflow-y: scroll;
+    height:40vh;
+ }
+ .white-text{color:#fff;}
+ .red-titles{color:#FD4C5D; font-weight: bold; margin-bottom: 0em; width: 100%;}
+ .list-videos{
+    list-style: none;
+ }
+ .scroll-bar::-webkit-scrollbar {
+      width: 7px;
+      background-color:#202026;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+      background-color:#fff;
+    border-radius:5px;
+     height:20%; 
+}
+.scroll-bar::-moz-scrollbar{
+    background-color:#202026;
+    width:7px;
+  
+}
+.scroll-bar::-moz-scrollbar-thumb{
+    background-color:#fff;
+    border-radius:5px;
+     height:20%;
+}
+.footer-cap{
+    padding-right: 10px;
+    margin-bottom: 0;
+    
+}
+.nom-cap{ margin-bottom: 0; color:#fd4c5d; font-size: 1.5em;padding-left: 10px;}
+.nom-cap i{line-height: 1;}
+.fa-angle-double-up{ float:right; }
+.nav-capitulo li a{
+    color:#fff;
+}
+#second-part-capi{
+    background-color: #ffffff;
+}
+.capitulo-text{
+    margin-bottom: 2.5em;
+}
+.comen-regis li{  display: inline-block; padding-right: 1em;}
+.contador{float:right;}
+.btn-comentar{ 
+background-color: #25a3f3; 
+min-width: 120px;
+height: 32px;
+line-height: 1;
+color:#fff; 
+float:right;
+margin-bottom: 1.5em;
+}
+.comment-box{margin-bottom: 2em;}
+.img-text{ margin-bottom: 1em; }
+.subt-capitulo{ margin-bottom: 1em; margin-top: 1em; }
+
+.img-server{ width: 100%; max-height: 400px; }
+.nav-tabs{border-bottom: none;}
+.nom-cap{font-size: 1.5em; width: 100%;}
+.nom-cap a {color: #fff;}
+.videonegro{
+    background-color: #000;
+}
+
+.pelicula_datos{
+    background-color: #1a1a22;
+}
+.pelicula_datos p{
+color: #fff;
+}
+.pelicula_datos b{
+    color:#FD4C5D;
+}

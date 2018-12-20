@@ -1,0 +1,248 @@
+i span{
+    color:#000;
+    font-weight: 300 !important;
+}
+a:hover {
+    color: #fd4c5d;
+}
+.page-link{
+    height: 55.5px;
+}
+.btn-block { 
+    height: 44px;
+    margin-top: .5rem;
+}
+.fa-chevron-circle-right{
+    color: #007bff;
+    margin:6.5px;
+}
+ .imgssm{
+     height: 9.4vw ;
+     width: 100%;
+     border-radius: 3px;
+}
+ .imgsm{
+     height:7vw ;
+     width: 100%;
+     border-radius: 3px;
+}
+ .imgmd{
+     height:14vw ;
+     width: 100%;
+     border-radius: 3px;
+}
+ .imglg{
+     height:20vw ;
+     width: 100%;
+     border-radius: 3px;
+}
+.series{
+     margin-top:5px;
+     margin-bottom: 5px;
+}
+
+ .spanhovertilte{
+     display:block;
+     height: 20px;
+     padding:3px;
+     color: #000;
+     overflow: hidden;
+    
+    
+}
+ .spanhovertag{
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+}
+.card{
+background-color: transparent;
+}
+ a:hover a .spanhovertag {
+     display: block;
+     background-color: rgba(0,0,0,0.7);
+     color: #eee;
+}
+.news{
+    padding-right: 0px; margin-left:1.5%;}
+@media (max-width:767px){
+.imgssm{
+    height:40vw !important;
+    width: 100%;
+    border-radius: 2% 2% 0px 0px;
+}
+   .imgsm{
+    height:45vw !important;
+    width: 100%;
+    border-radius: 2% 2% 0px 0px;
+}
+   .imglg{
+    height:95vw !important;
+    width: 100%;
+    border-radius: 2% 2% 0px 0px;
+}
+ .imgmd{
+    height:35vw !important;
+    width: 100%;
+    border-radius: 2% 2% 0px 0px;
+}
+#home .row{
+    margin:auto;
+    width: 100%;
+}
+
+.news, .col-md-12{
+    padding-right: 0px !important; 
+    margin-left:0 !important;}
+
+}
+
+
+
+/* ############### FOOTER CSS ############## */
+ footer{
+     background-color:#2F343A;
+}
+footer .fa-chevron-circle-right{ 
+    color:#fd4c5d;
+}
+footer p{
+    color:#fff;
+}
+
+ #tope .titulo-fo{
+     color:#fd4c5d;
+     margin-bottom: 1em;
+     padding-top: 0.5em;
+     font-size: 1.5em;
+}
+
+ #tope .sub-fo{
+     color: #fff;
+     text-align: justify;
+     font-weight: bold;
+}
+ #tope .contact{
+     list-style: none;
+     padding-left:0 !important;
+}
+ .contact li{
+     margin-bottom: 0.5em;
+     
+}
+ .contact li a {
+     color:#fff;
+}
+ .pie-pagina{
+     background-color: #21262A !important;
+     width:100%;
+}
+ .fa-chevron-circle-right{
+     float:left;
+     padding-right: 0.5em;
+}
+ .pie-pagina p{
+     margin-bottom:0;
+     padding-bottom:1.5em;
+}
+ .rounded{
+     margin-bottom:50px;
+}
+/* Para los subtitulos de los row*/
+ .sub-t{
+     margin-bottom:1em;
+     font-family: 'Amaranth', sans-serif;
+}
+ #home{
+     margin-bottom:2.5em;
+}
+ #redes-sociales-f ul li{
+     display: inline;
+     float: right;
+     padding-right:1em;
+}
+ #redes-sociales-f ul li a{
+     color: #868588 !important;
+}
+/* ############### FOTER CSS ############## */
+/*################HEADER CSS ############## */
+#boton-menu{display:none;}
+.font-s{display:none;}
+.fixed-top {background-color: #000 !important; }
+#row-header{width:100%;}
+
+.login-b{
+  color:#fff;
+  width:2.5em;
+ font-weight: bold;
+}
+.login-b:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+  color:#fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-regi{
+  background-color: #FD4C5D;
+  color:#fff;
+   font-weight: bold;
+   margin-left: 10px;
+}
+.btn-regi:hover{
+  color:#fff;
+  background-color: #FD4C5D;
+}
+ .input-buscar{ 
+     width:316px;
+     height:32px;
+     border-radius: 3px 0 0 3px;
+     color: #999;
+     box-sizing: border-box; 
+ }
+ .btn-buscar{
+     background: #fd4c5d;
+     color: #fff;
+     border-radius: 0 3px 3px 0;
+     font-size: 14px;
+     width: 46px;
+     height: 32px;
+ }
+ .ocultar{
+    margin-top: 5px;
+ }
+ .registrarbtn{
+    margin-top: 4px;
+    margin-left: 20px;
+    color: #fd4c5d;
+ }
+
+ #responsivenav{display: none;}
+ @media(max-width: 290px){
+    #responsivenav{display: block;}
+    #navi-principal{display: none;}
+    #row-header{display: none;}
+    .input-look{width:216px; display: inline-block; }
+    .btn-buscar{display: inline-block; width:35px; margin-top: -6.3px}
+    .registrarbtn{margin-left: 5px;}
+ }
+@media (min-width: 292px) and (max-width: 574px){
+    #responsivenav{display: block;}
+    #navi-principal{display: none;}
+    #row-header{display: none;}
+    .input-look{width:216px; display: inline-block; }
+    .btn-buscar{display: inline-block; width:35px; margin-top: -6.3px}
+}
+@media (min-width: 575px) and (max-width: 782px){
+     #responsivenav{display: block;}
+    #navi-principal{display: none;}
+    #row-header{display: none;}
+    .input-look{width:216px; display: inline-block; }
+    .btn-buscar{display: inline-block; width:35px;}
+    .navbar-header{width:100% !important;}
+}
+.row-responsive{margin: 0; width: 100%;}
+.no-padding{padding: 0;}
+/* Barra debajo del nav*/

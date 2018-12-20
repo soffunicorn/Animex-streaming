@@ -1,0 +1,119 @@
+body {
+    color: #797979;
+    background: #f2f2f2;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:13px;
+}
+
+#second-nav li a{
+    color:#000;
+}
+#second-nav li a i{padding-right:0.5em;}
+.level{ color:#000; }
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+::selection {
+
+    background: #68dff0;
+    color: #fff;
+}
+::-moz-selection {
+    background: #68dff0;
+    color: #fff;
+}
+
+
+.bgi{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:180px;
+}
+.cic{
+    z-index:1000;
+    width:80px;
+    height:80px;
+    position:relative;
+    top:6.5em;
+    left:2.5em;
+}
+.fa-home{color:#00ff00;}
+.fa-asterisk{color:#800080;}
+.fa-tv{ color:#ff8000;}
+.fa-youtube{color:#ff0000;}
+.fa-heart{color:#ff00ff;}
+.fa-power-off{color:#FF3300;}
+.fa-user-edit{color:#2b589b;}
+.user-name{
+    color:#000;
+    position:relative;
+    top:1em;
+    left:4.5em;
+    z-index:1000;
+}
+.level{
+    float:right;
+    width:25%;
+    text-align:right;
+}
+#second-nav{
+    margin-bottom:3em;
+}
+.col-md-4{ margin-bottom:1em;}
+/*Para la page de editar*/
+.user-titulo{
+    text-align:left;
+    margin-top: 1em !important;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.change-p{
+    margin-bottom:2.5em;
+}
+.btn-cargar{ width:60% !important; background-color: #000 !important; 
+    color:#fff; 
+    font-size:1.5em; 
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.fa-angle-right{ color:#fff; font-size: 1.5em; }
+.fa-users-cog{color:#82C91E;}
+.fa-user-lock{color:#f3c200;}
+.fa-user{color:#ff6414;}
+.subt-editar{color:#000; text-align: center; font-size: 1.5em; padding-top: 2em; }
+#editarPerfil{
+    background-color: #f2f2f2;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+#editarPerfil .nav-item{
+    border:solid;
+    border-width:2px;
+    border-color:#FF7E00;
+    border-radius:10px;
+}
+.n-Pill{
+    text-decoration: none;
+
+}
+.n-Pill:visited{ background-color: #fff !important; }
+#editarPerfil .nav-item{
+    min-height: 7em;
+}
+.welcome{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.twice{
+    display: inline-block;
+    width:49%;
+}
+.twice input{ width:100% !important; }
+.salir{ width:10%; margin-bottom: 0.5em; color:#fff; background-color:#FF7E00; float:right; }
+.fa-chevron-circle-right{ color:#fff; float:right; overflow: visible; }
+@media (max-width: 900px){
+    .salir{width:50%;}
+}
